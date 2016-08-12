@@ -1,0 +1,57 @@
+/* CSS Document */
+.lanren {
+	overflow: hidden;
+	margin: 100px auto;
+}
+.lanren ul li {
+	width: 300px;
+	height: 200px;
+	float: left;
+	margin: 0 15px 15px 0;
+	position: relative;
+	overflow: hidden;
+	cursor: pointer;
+}
+.lanren .txt {
+	width: 297px;
+	height: 45px;
+	background: url(../image/1px.png) repeat;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	color: #fff;
+}
+.lanren .txt h3 {
+	font-size: 20px;
+	font-weight: 100;
+	height: 45px;
+	text-align: center;
+	line-height: 45px;
+	margin-top: -1px;
+}
+.lanren .txt p {
+	font-size: 14px;
+	text-align: center;
+	margin-top: 45px;
+}
+.lanren img{
+	max-width: 300px;
+	margin-top: -46px;
+	}
+body {
+	font-family: "Microsoft YaHei UI"
+}
+.jiehsao{
+	margin-bottom: 30px;
+	-webkit-transition: all 0.5s ease 0s;
+	-o-transition: all 0.5s ease 0s;
+	transition: all 0.5s ease 0s;
+	}.jiehsao:hover {
+	color: #337AB7;
+}
+#footer {
+	width: 100%;
+	height: 30px;
+	margin-top: 200px;
+	
+}

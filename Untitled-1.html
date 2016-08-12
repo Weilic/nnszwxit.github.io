@@ -1,0 +1,40 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>jquery鼠标hover事件文字内容滑动遮罩效果</title>
+<style>
+*{margin:0;padding:0;list-style-type:none;}/*清楚内外默认边距*/
+.lanren{width:950px; overflow:hidden;margin:100px auto;}
+.lanren ul li{width:297px;height:198px;float:left;margin:0 15px 15px 0;position:relative;overflow:hidden;cursor:pointer;}
+.lanren .txt{width:297px;height:45px; background:url(images/1px.png) repeat;position:absolute;left:0;bottom:0;color:#fff;font-family:"微软雅黑";}
+.lanren .txt h3{font-size:20px;font-weight:100;height:45px;text-align:center;line-height:45px;}
+.lanren .txt p{font-size:14px;text-align:center;}
+</style>
+</head>
+<body>
+<!-- 代码部分begin -->
+<div class="lanren">
+	<ul>
+		<li><img src="images/class1.jpg"/><div class="txt"><h3>IT培训</h3><p>为您铺就成为IT大神的在线学习之路</p></div></li>
+		<li><img src="images/class2.jpg"/><div class="txt"><h3>语言学习</h3><p>英语、韩语、日语各类语言课程一网打尽</p></div></li>
+        <li><img src="images/class3.jpg"/><div class="txt"><h3>职业技能</h3><p>传授会计师、建筑师等各类考证学习宝典</p></div></li>
+		<li><img src="images/class4.jpg"/><div class="txt"><h3>中小学/大学</h3><p>小学、初中、高中各科课程在线辅导</p></div></li>
+		<li><img src="images/class5.jpg"/><div class="txt"><h3>兴趣爱好</h3><p>吉他、摄影等各类兴趣教程让你成为生活达人</p></div></li>
+		<li><img src="images/class6.jpg"/><div class="txt"><h3>亲子学堂</h3><p>教你如何和宝宝一起成长</p></div></li>
+	</ul>
+</div>
+<script src="http://www.lanrenzhijia.com/ajaxjs/jquery.min.js"></script>
+<script>
+$(".lanren ul li").hover(function(){
+	$(this).find(".txt").stop().animate({height:"198px"},400);
+	$(this).find(".txt h3").stop().animate({paddingTop:"60px"},400);
+},function(){
+	$(this).find(".txt").stop().animate({height:"45px"},400);
+	$(this).find(".txt h3").stop().animate({paddingTop:"0px"},400);
+})
+</script>
+<!-- 代码部分end -->
+</body>
+</html>
