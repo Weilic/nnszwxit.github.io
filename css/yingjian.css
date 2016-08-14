@@ -1,8 +1,4 @@
-.title {
-	margin-top: 100px;
-	margin-bottom: 50px;
-	font-weight: bolder;
-}
+/* CSS Document */
 body {
 	font-family: "Microsoft YaHei UI";
 }
@@ -11,11 +7,14 @@ body {
 	height: 30px;
 	margin-top: 300px;
 }
-.guodu {
+.image {
+	max-width: 100%;
+}
+.jianbian {
 	-webkit-transition: all 0.5s ease;
 	-o-transition: all 0.5s ease;
 	transition: all 0.5s ease;
 }
-.guodu:hover {
+.jianbian:hover {
 	color: #3278B4;
 }

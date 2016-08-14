@@ -1,4 +1,3 @@
-/* CSS Document */
 .lanren {
 	overflow: hidden;
 	margin: 100px auto;
@@ -13,7 +12,7 @@
 	cursor: pointer;
 }
 .lanren .txt {
-	width: 297px;
+	width: 300px;
 	height: 45px;
 	background: url(../image/1px.png) repeat;
 	position: absolute;
