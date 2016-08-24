@@ -1,0 +1,26 @@
+/* CSS Document */
+.title {
+	margin-top: 100px;
+	margin-bottom: 50px;
+	font-weight: bolder;
+}
+body {
+	font-family: "Font";
+}
+#footer {
+	width: 100%;
+	height: 30px;
+	margin-top: 50px;
+}
+.guodu {
+	-webkit-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+.guodu:hover {
+	color: #3278B4;
+}
+@font-face {
+	font-family: Font;
+	src: url("../fonts/msyh.ttf")
+}

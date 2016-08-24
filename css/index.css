@@ -4,7 +4,7 @@
 	font-weight: bolder;
 }
 body {
-	font-family: "Microsoft YaHei UI";
+	font-family: "Font";
 }
 #footer {
 	width: 100%;
@@ -18,4 +18,8 @@ body {
 }
 .guodu:hover {
 	color: #3278B4;
+}
+@font-face {
+	font-family: Font;
+	src: url("../fonts/msyh.ttf")
 }
