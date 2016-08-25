@@ -8,7 +8,7 @@ $(".lanren ul li").hover(function(){
 })
 if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) )
 {
-	var s = "<a class=\"btn btn-default\" href=\"http://www.bilibili.com/video/av5855156/\" role=\"button\">av5855156</a>";
+	var s = "<a class=\"btn btn-default\" href=\"https://www.bilibili.com/video/av5855156/\" role=\"button\">av5855156</a>";
 	document.getElementById("p1").innerHTML += s
 }
 else{
