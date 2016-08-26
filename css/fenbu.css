@@ -41,7 +41,7 @@
 	padding:0;
 }
 body {
-	font-family: "Font"
+	font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;
 }
 .jiehsao {
 	margin-bottom: 30px;
@@ -56,8 +56,4 @@ body {
 	width: 100%;
 	height: 30px;
 	margin-top: 200px;
-}
-@font-face {
-	font-family: Font;
-	src: url("../fonts/msyh.ttf")
 }

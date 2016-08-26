@@ -1,5 +1,5 @@
 body {
-	font-family: "Font";
+	font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;
 }
 #footer {
 	width: 100%;
@@ -13,8 +13,4 @@ body {
 }
 .jianbian:hover {
 	color: #3278B4;
-}
-@font-face {
-	font-family: Font;
-	src: url("../fonts/msyh.ttf")
 }
