@@ -15,3 +15,20 @@ else{
 	var s = "<embed height=\"415\" width=\"544\" quality=\"high\" allowfullscreen=\"true\" type=\"application/x-shockwave-flash\" src=\"https://static.hdslb.com/miniloader.swf\" flashvars=\"aid=5855156&page=1\" pluginspage=\"https://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash\"></embed>";
 	document.getElementById("p1").innerHTML += s
 }
+function time() 
+{ 
+	 var theTime="2016/11/12" 
+	 var endTime=new Date(theTime); 
+	 var totalSecs=(endTime-new Date())/1000; 
+	 var days=Math.floor(totalSecs/3600/24); 
+	 document.getElementById("time1").innerHTML="距离NOIp2016还有<strong>"+days+"天</strong>"; 
+	 var theTime="2017/8/1" 
+	 var endTime=new Date(theTime); 
+	 var totalSecs=(endTime-new Date())/1000; 
+	 var days=Math.floor(totalSecs/3600/24); 
+	 document.getElementById("time2").innerHTML="距离NOI2017还有<strong>"+days+"天</strong>"; 
+} 
+window.onload=function() 
+{ 
+	time();
+} 
