@@ -19,3 +19,17 @@ body {
 .guodu:hover {
 	color: #3278B4;
 }
+.gdtext{
+	font-family: "微软雅黑";
+	font-size: x-large;	
+}
+.heimu{
+	color: #000000;
+	background: #000000;
+	-webkit-transition: all 0s;
+	-o-transition: all 0s;
+	transition: all 0s;
+}.heimu:hover {
+	color: #FFFFFF;
+	cursor:help;
+}
