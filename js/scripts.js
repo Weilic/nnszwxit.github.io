@@ -17,7 +17,7 @@ else{
 }
 function time() 
 { 
-	 var theTime="2016/11/19" 
+	 var theTime="2016/11/20" 
 	 var endTime=new Date(theTime); 
 	 var totalSecs=(endTime-new Date())/1000; 
 	 var days=Math.floor(totalSecs/3600/24); 
