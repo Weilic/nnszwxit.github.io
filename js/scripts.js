@@ -21,7 +21,7 @@ function time()
 	 var endTime=new Date(theTime); 
 	 var totalSecs=(endTime-new Date())/1000; 
 	 var days=Math.floor(totalSecs/3600/24); 
-	 document.getElementById("time1").innerHTML="距离 NOIp2016 还有<strong>"+days+"天</strong>"; 
+	 //document.getElementById("time1").innerHTML="距离NOIp2016 还有<strong>"+days+"天</strong>"; 
 	 var theTime="2017/8/1" 
 	 var endTime=new Date(theTime); 
 	 var totalSecs=(endTime-new Date())/1000; 
