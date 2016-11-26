@@ -26,7 +26,7 @@ function time()
 	 var endTime=new Date(theTime); 
 	 var totalSecs=(endTime-new Date())/1000; 
 	 var days=Math.floor(totalSecs/3600/24); 
-	 document.getElementById("time2").innerHTML="距离 NOI20107 还有<strong>"+days+"天</strong>"; 
+	 document.getElementById("time2").innerHTML="距离 NOI2017 还有<strong>"+days+"天</strong>"; 
 } 
 window.onload=function() 
 { 
