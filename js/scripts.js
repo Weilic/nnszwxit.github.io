@@ -28,20 +28,7 @@ function time()
 	 var days=Math.floor(totalSecs/3600/24); 
 	 document.getElementById("time2").innerHTML="距离 NOI2017 还有<strong>"+days+"天</strong>"; 
 } 
-function fun(){
-    var bp = document.createElement('script');
-    var curProtocol = window.location.protocol.split(':')[0];
-    if (curProtocol === 'https') {
-        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
-    }
-    else {
-        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
-    }
-    var s = document.getElementsByTagName("script")[0];
-    s.parentNode.insertBefore(bp, s);
-}
 window.onload=function() 
 { 
 	time();
-	fun();
 } 
