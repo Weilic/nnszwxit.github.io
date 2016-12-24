@@ -4,7 +4,8 @@
 	font-weight: bolder;
 }
 body {
-	font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;
+	font-family: "Arial", "Microsoft YaHei", "黑体", "宋体", sans-serif;
+	background-size: cover;
 }
 #footer {
 	width: 100%;
@@ -19,17 +20,21 @@ body {
 .guodu:hover {
 	color: #3278B4;
 }
-.gdtext{
+.gdtext {
 	font-family: "微软雅黑";
-	font-size: x-large;	
+	font-size: x-large;
 }
-.heimu{
+.heimu {
 	color: #000000;
 	background: #000000;
 	-webkit-transition: all 0s;
 	-o-transition: all 0s;
 	transition: all 0s;
-}.heimu:hover {
-	color: #FFFFFF;
-	cursor:help;
 }
+.heimu:hover {
+	color: #FFFFFF;
+	cursor: help;
+}
+.yuandan {
+	max-width: 100%;
+	display: inline;}
