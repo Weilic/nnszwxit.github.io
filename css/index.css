@@ -35,3 +35,6 @@ body {
 	color: #FFFFFF;
 	cursor: help;
 }
+.pic {
+	max-width: 100%;
+}
