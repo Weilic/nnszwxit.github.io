@@ -26,10 +26,15 @@
 		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 			<ul class="nav navbar-nav navbar-right">
 				<li><a href="../index.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span></a> </li>
-				<li><a href="../event/2016yuandan.html">2016元旦通宵活动</a></li>
+				<li class="dropdown"> <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">活动<span class="caret"></span></a>
+					<ul class="dropdown-menu">
+						<li><a href="../event/2016yuandan.html">2016元旦通宵活动</a></li>
+						<li><a href="../event/2016weidianying.html">微电影讲座</a></li>
+					</ul>
+				</li>
 				<li class="dropdown"> <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">分部<span class="caret"></span></a>
 					<ul class="dropdown-menu">
-						<li><a>分部介绍</a></li>
+						<li><a href="../fenbu.html">分部介绍</a></li>
 						<li role="separator" class="divider"></li>
 						<li><a href="../fenbu/yingjian.html" >硬件部</a></li>
 						<li><a href="../fenbu/ruanjian_ps.html">软件部</a></li>
