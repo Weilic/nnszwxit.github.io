@@ -36,5 +36,5 @@ function time() {
 	document.getElementById("time2").innerHTML = "距离 NOI2017 还有<strong>" + days + "天</strong>";
 }
 window.onload = function () {
-	time();
+	//time();
 }
