@@ -29,7 +29,7 @@ function time() {
 	var totalSecs = (endTime - new Date()) / 1000;
 	var days = Math.floor(totalSecs / 3600 / 24);
 	document.getElementById("time1").innerHTML = "距离NOIp2017 还有<strong>" + days + "天</strong>";
-	var theTime = "2017/8/1";
+	var theTime = "2017/7/19";
 	var endTime = new Date(theTime);
 	var totalSecs = (endTime - new Date()) / 1000;
 	var days = Math.floor(totalSecs / 3600 / 24);
