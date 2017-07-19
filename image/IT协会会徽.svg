@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="274px" height="274px" viewBox="0 0 274 274" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 39 (31667) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 4</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M137,273.330073 C212.663011,273.330073 274,212.143052 274,136.665037 C274,132.910405 273.848219,129.191136 273.550445,125.513004 C267.862168,55.2509692 208.899176,0 137,0 C61.3369893,0 0,61.1870211 0,136.665037 C0,212.143052 61.3369893,273.330073 137,273.330073 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard-2" transform="translate(-230.000000, -1199.000000)">
+            <g id="Group-4" transform="translate(230.000000, 1199.000000)">
+                <g id="Rectangle-14">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="Mask" fill="#2796EC" xlink:href="#path-1"></use>
+                    <path d="M137.258753,252.021151 C200.216233,252.021151 251.253355,200.812152 251.253355,137.642651 C251.253355,74.4731497 200.216233,23.2641509 137.258753,23.2641509 C74.3012727,23.2641509 23.2641509,74.4731497 23.2641509,137.642651 C23.2641509,200.812152 74.3012727,252.021151 137.258753,252.021151 Z" id="Oval-15" fill="#FFFFFF" opacity="0.2" mask="url(#mask-2)"></path>
+                    <circle id="Oval-15" fill="#FFFFFF" opacity="0.2" mask="url(#mask-2)" cx="136.969409" cy="136.969409" r="86.6325779"></circle>
+                    <ellipse id="Oval-15" fill="#FFFFFF" opacity="0.803419384" mask="url(#mask-2)" cx="136.660686" cy="136.636175" rx="61.2222549" ry="61.1977439"></ellipse>
+                    <rect fill="#E3F1FC" mask="url(#mask-2)" x="97" y="212" width="83.872726" height="105.267257" rx="7"></rect>
+                </g>
+                <text id="IT" font-family="Arial" font-size="90" font-style="condensed" font-weight="bold" letter-spacing="-2.16266632" fill="#2796EC">
+                    <tspan x="103.114557" y="170.424528">IT</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

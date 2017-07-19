@@ -38,3 +38,13 @@ body {
 .pic {
 	max-width: 100%;
 }
+.hyperlink{
+	color: black;
+	-webkit-transition: all 0s linear 0s;
+	-o-transition: all 0s linear 0s;
+	transition: all 0s linear 0s;
+	
+}
+.hyperlink:hover {
+	color: white;
+}
