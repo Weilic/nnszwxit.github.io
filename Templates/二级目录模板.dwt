@@ -49,8 +49,12 @@
 	<!-- /.container-fluid --> 
 </nav>
 <!-- TemplateBeginEditable name="EditRegion1" -->EditRegion1<!-- TemplateEndEditable -->
-<div class="container-fluid">
-	<div id="footer" align="center">Copyright © 2017. All Right Reserved. Made by TFX&nbsp;&nbsp;&nbsp;<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1260134110'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1260134110%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script></div>
+<div class="container-fluid" id="footer">
+	<div id="lastUpdate" align="center" style="margin-top: 50px; color: #B3B3B3;"></div>
+	<div align="center" style="color: #B3B3B3; font-weight: lighter; font-family: '等线'; font-size: large; margin-bottom: 20px;">Copyright © 2017. All Right Reserved. Made by TFX</div>
+	<div align="center" style="margin-top: 20px; color: #FFFFFF;">
+		<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1260134110'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1260134110%26online%3D1%26show%3Dline' type='text/javascript'%3E%3C/script%3E"));</script>
+		</div>
 </div>
 <script src="../js/jquery.min.js"></script> 
 <script src="../js/bootstrap.min.js"></script> 
