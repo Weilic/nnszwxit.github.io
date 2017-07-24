@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html><!-- InstanceBegin template="/Templates/根目录模板.dwt" codeOutsideHTMLIsLocked="false" -->
+<html>
+<!-- InstanceBegin template="/Templates/根目录模板.dwt" codeOutsideHTMLIsLocked="false" -->
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -62,7 +63,7 @@
 			<p align="center" id="time2"></p>
 			<br>
 			<marquee style="border-radius: 30px; padding-top: 50px; padding-right: 50px; padding-bottom: 50px; padding-left: 50px; background-color: #E1E1E1;">
-				<span class="gdtext guodu">网页评论系统已更新！</span> <span class="heimu gdtext">（但很尴尬的是需要<a href="https://github.com/getlantern/forum/issues/833" class="hyperlink">翻墙</a>）</span>
+			<span class="gdtext guodu">网页评论系统已更新！</span> <span class="heimu gdtext">（但很尴尬的是需要<a href="https://github.com/getlantern/forum/issues/833" class="hyperlink">翻墙</a>）</span>
 			</marquee>
 			<h2 class="guodu"><span style="text-decoration: line-through">安利</span>学习网址</h2>
 			<a href="http://www.doyoudo.com"><img src="http://a.36krcnd.com/nil_class/b2827927-5d24-46cf-ac3f-6f861e20834f/new_logo.png" alt="doyoudo"></a> &nbsp;&nbsp;&nbsp; <a href="http://www.51zxw.net/"><img src="http://www.51zxw.net/images/logo_20172.jpg"></a> &nbsp;&nbsp;&nbsp; <a href="http://www.mengma.com/"><img src="http://s.mengma.com/img/logo.svg" style="height: 70px;"></a> <br>
@@ -122,7 +123,17 @@ s.setAttribute('data-timestamp', +new Date());
 			<h2 class="guodu">介绍视频</h2>
 		</div>
 		<div class="col-md-1"></div>
-		<div class="col-md-12" align="center" id="p1"> </div>
+		<div class="col-md-12" align="center" id="p1"> 
+			<script>
+				if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+					var s = "<a class=\"btn btn-default\" href=\"http://www.bilibili.com/video/av5855156/\" role=\"button\">av5855156</a>";
+					document.write(s);
+				} else {
+					var s = "<embed height=\"415\" width=\"544\" quality=\"high\" allowfullscreen=\"true\" type=\"application/x-shockwave-flash\" src=\"https://static.hdslb.com/miniloader.swf\" flashvars=\"aid=5855156&page=1\" pluginspage=\"https://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash\"></embed>";
+					document.write(s);
+				}
+			</script> 
+		</div>
 	</div>
 </div>
 <!-- InstanceEndEditable -->
@@ -137,4 +148,5 @@ s.setAttribute('data-timestamp', +new Date());
 <script src="js/bootstrap.min.js"></script> 
 <script src="js/scripts.js"></script>
 </body>
-<!-- InstanceEnd --></html>
+<!-- InstanceEnd -->
+</html>
