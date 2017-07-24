@@ -25,7 +25,7 @@
 		<!-- Collect the nav links, forms, and other content for toggling -->
 		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 			<ul class="nav navbar-nav navbar-right">
-				<li><a href="https://nnszwxit.github.io"><span class="glyphicon glyphicon-home" aria-hidden="true"></span></a> </li>
+				<li><a href="https://nnszwxit.github.io"><span class="glyphicon glyphicon-home" aria-hidden="true"></span></a></li>
 				<li class="dropdown"> <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">活动<span class="caret"></span></a>
 					<ul class="dropdown-menu">
 						<li><a href="event/2016yuandan.html">2016元旦通宵活动</a></li>
@@ -42,6 +42,7 @@
 						<li><a href="fenbu/biancheng.html">算法与程序部</a></li>
 					</ul>
 				</li>
+				<li><a href="monthlyExercise/total.html">月练</a></li>
 			</ul>
 		</div>
 		<!-- /.navbar-collapse --> 
@@ -52,9 +53,9 @@
 <div class="container-fluid" id="footer">
 	<div id="lastUpdate" align="center" style="margin-top: 50px; color: #B3B3B3;"></div>
 	<div align="center" style="color: #B3B3B3; font-weight: lighter; font-family: '等线'; font-size: large; margin-bottom: 20px;">Copyright © 2017. All Right Reserved. Made by TFX</div>
-	<div align="center" style="margin-top: 20px; color: #FFFFFF;">
-		<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1260134110'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1260134110%26online%3D1%26show%3Dline' type='text/javascript'%3E%3C/script%3E"));</script>
-		</div>
+	<div align="center" style="margin-top: 20px; color: #FFFFFF;"> 
+		<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1260134110'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1260134110%26online%3D1%26show%3Dline' type='text/javascript'%3E%3C/script%3E"));</script> 
+	</div>
 </div>
 <script src="js/jquery.min.js"></script> 
 <script src="js/bootstrap.min.js"></script> 

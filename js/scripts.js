@@ -27,9 +27,12 @@ function time() {
 	var days = Math.floor(totalSecs / 3600 / 24);
 	document.getElementById("time2").innerHTML = "距离 NOI2017 还有<strong>" + days + "天</strong>";
 }
-
+function verticalAlign(){
+	document.getElementById("verticalPic").style.marginTop = (document.getElementById("cmpPic").offsetHeight - document.getElementById("verticalPic").offsetHeight) / 2 + "px";
+}
 window.onload = new function () {
 	document.getElementById("lastUpdate").innerHTML = "本页面最后修改于" + document.lastModified;
+	verticalAlign();
 	if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
 		var s = "<a class=\"btn btn-default\" href=\"http://www.bilibili.com/video/av5855156/\" role=\"button\">av5855156</a>";
 		document.getElementById("p1").innerHTML = s;
