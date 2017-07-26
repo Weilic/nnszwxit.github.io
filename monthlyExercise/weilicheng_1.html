@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<!-- InstanceBegin template="/Templates/二级目录模板.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--[if IE]><meta http-equiv="refresh" content="0;url=unsupport-browser.html"><![endif]-->
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>韦力铖的Arduino八位数码管</title>
+<!-- InstanceEndEditable -->
+<meta name="description" content="这是南宁市第三中学IT协会（五象校区）的官网">
+<link href="../css/bootstrap.min.css" rel="stylesheet">
+<link href="../css/index.css" rel="stylesheet">
+<!-- InstanceBeginEditable name="head" -->
+<!-- InstanceEndEditable -->
+</head>
+<body>
+<nav class="navbar navbar-default">
+	<div class="container-fluid"> 
+		<!-- Brand and toggle get grouped for better mobile display -->
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+			<a class="navbar-brand"  style="font-size:16px;"><img src="../image/IT协会会徽.svg" style="display: inline-block;max-height:45px;margin-top: -12.5px;padding-right: 10px;">南宁市第三中学IT协会（五象校区）</a></div>
+		
+		<!-- Collect the nav links, forms, and other content for toggling -->
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="https://nnszwxit.github.io"><span class="glyphicon glyphicon-home" aria-hidden="true"></span></a> </li>
+				<li class="dropdown"> <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">活动<span class="caret"></span></a>
+					<ul class="dropdown-menu">
+						<li><a href="../event/2016yuandan.html">2016元旦通宵活动</a></li>
+						<li><a href="../event/2016weidianying.html">微电影讲座</a></li>
+					</ul>
+				</li>
+				<li class="dropdown"> <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">分部<span class="caret"></span></a>
+					<ul class="dropdown-menu">
+						<li><a href="../fenbu.html">分部介绍</a></li>
+						<li role="separator" class="divider"></li>
+						<li><a href="../fenbu/yingjian.html" >硬件部</a></li>
+						<li><a href="../fenbu/ruanjian_ps.html">软件部</a></li>
+						<li><a href="../fenbu/jiqiren.html">单片机与机器人部</a></li>
+						<li><a href="../fenbu/biancheng.html">算法与程序部</a></li>
+					</ul>
+				</li>
+				<li><a href="total.html">月练</a></li>
+			</ul>
+		</div>
+		<!-- /.navbar-collapse --> 
+	</div>
+	<!-- /.container-fluid --> 
+</nav>
+<!-- InstanceBeginEditable name="EditRegion1" -->
+<div class="container">
+	<div class="row clearfix">
+		<div class="col-md-1 column"> </div>
+		<div class="col-md-10 column">
+			<h1 class="guodu"> 韦力铖<br>
+				<small>Arduino八位数码管</small></h1>
+		</div>
+		<div class="col-md-1 column"> </div>
+	</div>
+	<div class="row clearfix">
+		<div class="col-md-1 column"> </div>
+		<div class="col-md-10 column">
+			<h2 class="guodu">源代码</h2>
+		</div>
+		<div class="col-md-1 column"> </div>
+	</div>
+	<div class="row clearfix">
+		<div class="col-md-1 column"> </div>
+		<div class="col-md-10 column">
+			<pre>
+<font color="#434f54">//**********************</font>
+<font color="#434f54">//*闲暇时自己做来玩玩的*</font>
+<font color="#434f54">//**********************</font>
+<font color="#00979c">int</font> <font color="#000000">pin</font><font color="#000000">[</font><font color="#000000">]</font> <font color="#434f54">=</font> <font color="#000000">{</font><font color="#000000">2</font><font color="#434f54">,</font> <font color="#000000">3</font><font color="#434f54">,</font> <font color="#000000">4</font><font color="#434f54">,</font> <font color="#000000">5</font><font color="#434f54">,</font> <font color="#000000">6</font><font color="#434f54">,</font> <font color="#000000">7</font><font color="#434f54">,</font> <font color="#000000">8</font><font color="#434f54">,</font> <font color="#000000">9</font> <font color="#000000">}</font><font color="#000000">;</font><font color="#434f54">//定义针脚使用5161bs八段数码管，对应数码管上的针脚为：7,6,4,2,1,9,10；3和8为Vcc只用接一个</font>
+<font color="#00979c">const</font> <font color="#00979c">unsigned</font> <font color="#00979c">char</font> <font color="#000000">num</font><font color="#000000">[</font><font color="#000000">]</font> <font color="#434f54">=</font> <font color="#000000">{</font><font color="#000000">0x3f</font><font color="#434f54">,</font> <font color="#000000">0x06</font><font color="#434f54">,</font> <font color="#000000">0x5b</font><font color="#434f54">,</font> <font color="#000000">0x4f</font><font color="#434f54">,</font> <font color="#000000">0x66</font><font color="#434f54">,</font> <font color="#000000">0x6d</font><font color="#434f54">,</font> <font color="#000000">0x7d</font><font color="#434f54">,</font> <font color="#000000">0x07</font><font color="#434f54">,</font> <font color="#000000">0x7f</font><font color="#434f54">,</font> <font color="#000000">0x6f</font><font color="#000000">}</font><font color="#000000">;</font><font color="#434f54">//段码用十六进制数表示</font>
+<font color="#00979c">int</font> <font color="#000000">number</font><font color="#000000">[</font><font color="#000000">]</font> <font color="#434f54">=</font> <font color="#000000">{</font><font color="#000000">0</font><font color="#434f54">,</font> <font color="#000000">1</font><font color="#434f54">,</font> <font color="#000000">2</font><font color="#434f54">,</font> <font color="#000000">3</font><font color="#434f54">,</font> <font color="#000000">4</font><font color="#434f54">,</font> <font color="#000000">5</font><font color="#434f54">,</font> <font color="#000000">6</font><font color="#434f54">,</font> <font color="#000000">7</font><font color="#434f54">,</font> <font color="#000000">8</font><font color="#434f54">,</font> <font color="#000000">9</font><font color="#000000">}</font><font color="#000000">;</font><font color="#434f54">//数字用在num数组中于查找串口发送的数据</font>
+<font color="#00979c">int</font> <font color="#000000">re</font><font color="#434f54">,</font> <font color="#000000">g</font><font color="#000000">;</font>
+<font color="#00979c">void</font> <font color="#5e6d03">setup</font><font color="#000000">(</font><font color="#000000">)</font> <font color="#000000">{</font>
+ &nbsp;<font color="#5e6d03">for</font> <font color="#000000">(</font><font color="#00979c">int</font> <font color="#000000">i</font> <font color="#434f54">=</font> <font color="#000000">2</font><font color="#000000">;</font> <font color="#000000">i</font> <font color="#434f54">&lt;=</font> <font color="#000000">9</font><font color="#000000">;</font> <font color="#000000">i</font><font color="#434f54">++</font><font color="#000000">)</font> <font color="#000000">{</font>
+ &nbsp;&nbsp;&nbsp;<font color="#d35400">pinMode</font><font color="#000000">(</font><font color="#000000">i</font><font color="#434f54">,</font> <font color="#00979c">OUTPUT</font><font color="#000000">)</font><font color="#000000">;</font>
+ &nbsp;<font color="#000000">}</font>
+ &nbsp;<b><font color="#d35400">Serial</font></b><font color="#434f54">.</font><font color="#d35400">begin</font><font color="#000000">(</font><font color="#000000">9600</font><font color="#000000">)</font><font color="#000000">;</font>
+ &nbsp;<font color="#5e6d03">while</font> <font color="#000000">(</font><font color="#434f54">!</font><b><font color="#d35400">Serial</font></b><font color="#000000">)</font><font color="#000000">;</font><font color="#434f54">//等待串口握手成功</font>
+ &nbsp;<font color="#5e6d03">for</font> <font color="#000000">(</font><font color="#00979c">int</font> <font color="#000000">p</font> <font color="#434f54">=</font> <font color="#000000">0</font><font color="#000000">;</font> <font color="#000000">p</font> <font color="#434f54">&lt;=</font> <font color="#000000">9</font><font color="#000000">;</font> <font color="#000000">p</font><font color="#434f54">++</font><font color="#000000">)</font> <font color="#000000">{</font>
+ &nbsp;&nbsp;&nbsp;<font color="#5e6d03">for</font> <font color="#000000">(</font><font color="#00979c">int</font> <font color="#000000">n</font> <font color="#434f54">=</font> <font color="#000000">1</font><font color="#000000">;</font> <font color="#000000">n</font> <font color="#434f54">&lt;=</font> <font color="#000000">8</font><font color="#000000">;</font> <font color="#000000">n</font><font color="#434f54">++</font><font color="#000000">)</font> <font color="#000000">{</font>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#d35400">digitalWrite</font><font color="#000000">(</font><font color="#000000">pin</font><font color="#000000">[</font><font color="#000000">n</font><font color="#000000">]</font><font color="#434f54">,</font> <font color="#434f54">!</font><font color="#d35400">bitRead</font><font color="#000000">(</font><font color="#000000">num</font><font color="#000000">[</font><font color="#000000">p</font><font color="#000000">]</font><font color="#434f54">,</font> <font color="#000000">n</font><font color="#000000">)</font><font color="#000000">)</font><font color="#000000">;</font>
+ &nbsp;&nbsp;&nbsp;<font color="#000000">}</font>
+ &nbsp;&nbsp;&nbsp;<font color="#d35400">delay</font><font color="#000000">(</font><font color="#000000">30</font><font color="#000000">)</font><font color="#000000">;</font>
+ &nbsp;<font color="#000000">}</font><font color="#434f54">//数码管显示0至9，算自检╮(─▽─)╭</font>
+ &nbsp;<b><font color="#d35400">Serial</font></b><font color="#434f54">.</font><font color="#d35400">println</font><font color="#000000">(</font><font color="#005c5f">"please,enter a number from 0 to 9."</font><font color="#000000">)</font><font color="#000000">;</font><font color="#434f54">//文字提示，显示在串口监视器上</font>
+<font color="#000000">}</font>
+<font color="#00979c">void</font> <font color="#5e6d03">loop</font><font color="#000000">(</font><font color="#000000">)</font> <font color="#000000">{</font>
+ &nbsp;<font color="#434f54">// put your main code here, to run repeatedly:</font>
+ &nbsp;<font color="#5e6d03">if</font> <font color="#000000">(</font><b><font color="#d35400">Serial</font></b><font color="#434f54">.</font><font color="#d35400">available</font><font color="#000000">(</font><font color="#000000">)</font> <font color="#434f54">&gt;</font> <font color="#000000">0</font><font color="#000000">)</font> <font color="#000000">{</font>
+ &nbsp;&nbsp;&nbsp;<font color="#000000">re</font> <font color="#434f54">=</font> <b><font color="#d35400">Serial</font></b><font color="#434f54">.</font><font color="#d35400">read</font><font color="#000000">(</font><font color="#000000">)</font> <font color="#434f54">-</font> <font color="#000000">48</font><font color="#000000">;</font> <font color="#434f54">//读取发送的数字，-48是因为串口是以ASCII码的形式发送数据</font>
+ &nbsp;<font color="#000000">}</font>
+ &nbsp;<font color="#5e6d03">if</font> <font color="#000000">(</font><font color="#000000">re</font> <font color="#434f54">&gt;=</font> <font color="#000000">0</font> <font color="#434f54">||</font> <font color="#000000">re</font> <font color="#434f54">&lt;=</font> <font color="#000000">9</font><font color="#000000">)</font> <font color="#000000">{</font>
+ &nbsp;&nbsp;&nbsp;<font color="#5e6d03">for</font> <font color="#000000">(</font><font color="#00979c">int</font> <font color="#000000">c</font> <font color="#434f54">=</font> <font color="#000000">0</font><font color="#000000">;</font> <font color="#000000">c</font> <font color="#434f54">&lt;=</font> <font color="#000000">9</font><font color="#000000">;</font> <font color="#000000">c</font><font color="#434f54">++</font><font color="#000000">)</font> <font color="#000000">{</font>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#5e6d03">if</font> <font color="#000000">(</font><font color="#000000">re</font> <font color="#434f54">==</font> <font color="#000000">number</font><font color="#000000">[</font><font color="#000000">c</font><font color="#000000">]</font><font color="#000000">)</font> <font color="#000000">{</font>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#000000">g</font> <font color="#434f54">=</font> <font color="#000000">c</font><font color="#000000">;</font>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#5e6d03">break</font><font color="#000000">;</font>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#000000">}</font>
+ &nbsp;&nbsp;&nbsp;<font color="#000000">}</font>
+ &nbsp;<font color="#000000">}</font><font color="#434f54">//查找数字对应的段码</font>
+ &nbsp;<font color="#5e6d03">for</font> <font color="#000000">(</font><font color="#00979c">int</font> <font color="#000000">p</font> <font color="#434f54">=</font> <font color="#000000">0</font><font color="#000000">;</font> <font color="#000000">p</font> <font color="#434f54">&lt;=</font> <font color="#000000">8</font><font color="#000000">;</font> <font color="#000000">p</font><font color="#434f54">++</font><font color="#000000">)</font> <font color="#000000">{</font>
+ &nbsp;&nbsp;&nbsp;<font color="#d35400">digitalWrite</font><font color="#000000">(</font><font color="#000000">pin</font><font color="#000000">[</font><font color="#000000">p</font><font color="#000000">]</font><font color="#434f54">,</font> <font color="#434f54">!</font><font color="#d35400">bitRead</font><font color="#000000">(</font><font color="#000000">num</font><font color="#000000">[</font><font color="#000000">g</font><font color="#000000">]</font><font color="#434f54">,</font> <font color="#000000">p</font><font color="#000000">)</font><font color="#000000">)</font><font color="#000000">;</font><font color="#434f54">//显示数字</font>
+ &nbsp;<font color="#000000">}</font>
+<font color="#000000">}</font>
+</pre>
+		</div>
+		<div class="col-md-1 column"> </div>
+	</div>
+	<div class="row clearfix">
+		<div class="col-md-1 column"> </div>
+		<div class="col-md-10 column"> 
+			<h2 class=" guodu">演示视频</h2>
+		</div>
+		<div class="col-md-1 column"> </div>
+	</div>
+	<div class="row clearfix">
+		<div class="col-md-1 column"> </div>
+		<div class="col-md-10 column"> 
+			<h3><small>还没上传……</small></h3>
+		</div>
+		<div class="col-md-1 column"> </div>
+	</div>
+</div>
+<!-- InstanceEndEditable -->
+<div class="container-fluid">
+	<div class = "row">
+		<div class = "col-md-1"></div>
+		<div id="disqus_thread" class = "col-md-10"></div>
+		<div class = "col-md-1"></div>
+	</div>
+</div>
+<div class="container-fluid" id="footer">
+	<div id="lastUpdate" align="center" style="margin-top: 50px; color: #B3B3B3;"></div>
+	<div align="center" style="color: #B3B3B3; font-weight: lighter; font-family: '等线'; font-size: large; margin-bottom: 20px;">Copyright © 2017. All Right Reserved. Made by TFX</div>
+	<div align="center" style="margin-top: 20px; color: #FFFFFF;"> 
+		<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1260134110'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1260134110%26online%3D1%26show%3Dline' type='text/javascript'%3E%3C/script%3E"));</script> 
+	</div>
+</div>
+<script>
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+/*
+var disqus_config = function () {
+this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://nnszwxit.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>
+Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+</noscript>
+<script src="../js/jquery.min.js"></script> 
+<script src="../js/bootstrap.min.js"></script> 
+<script src="../js/scripts.js"></script>
+</body>
+<!-- InstanceEnd -->
+</html>
