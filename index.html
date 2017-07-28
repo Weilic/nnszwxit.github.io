@@ -65,18 +65,7 @@
 			<marquee style="border-radius: 30px; padding-top: 50px; padding-right: 50px; padding-bottom: 50px; padding-left: 50px; background-color: #E1E1E1;">
 			<span class="gdtext guodu">网页评论系统已更新！</span> <span class="heimu gdtext">（但很尴尬的是需要<a href="https://github.com/getlantern/forum/issues/833" class="hyperlink">翻墙</a>）</span>
 			</marquee>
-			 <br>
-			 <br>
-			 <h1 class="guodu"><strike>大新闻：</strike>社团聚会</h1>
-			 <ol>
-			 	<li>时间：7月27日（星期四）</li>
-			 	<li>地点：先去国贸楼下集合</li>
-			 </ol>
-			<div id="gaodeMap" style="height: 500px;"></div>
-			<h3>路线规划：</h3>
-			<input type="text" id="keyword" name="keyword" value="请输入起点关键字" onfocus='this.value=""'>
-			<br><br>
-			<div id="panel"></div>
+			 <br><br>
 			<h2 class="guodu">社团介绍</h2>
 			<p style="text-indent: 2em">南宁三中IT协会（五象校区）(Information Technology Association of Wuxiang Campus of NO.3 High School of Nanning)，IT协会的Logo是以三个同心圆和”I”的上半部分组成,一般可以理解为“分享”“多元化”“Information”等,这也是IT协会的文化。</p>
 			<p style="text-indent: 2em">南宁三中IT协会（五象校区）是一个集多元、创新为一体的技术性社团。我们以“推广IT知识，服务全校师生，丰富校园生活”为宗旨，顺应IT潮流，引领校园IT，拉近师生与IT的距离。我们协会通过知识讲座讲授一些IT的知识，热爱IT的学生可以在此学习，进行技术交流。</p>
@@ -147,46 +136,6 @@ s.setAttribute('data-timestamp', +new Date());
 		</div>
 	</div>
 </div>
-<script type="text/javascript" src="https://webapi.amap.com/maps?v=1.3&key=4a1d32aa395cab165ff852c851a2d9be"></script>
-<script type="text/javascript" src="https://cache.amap.com/lbs/static/addToolbar.js"></script>
-<script>
-        var map = new AMap.Map('gaodeMap',{
-			zoom: 15,
-			center: [108.324459,22.813779]
-		});
-		map.plugin(["AMap.ToolBar"], function() {
-			map.addControl(new AMap.ToolBar());
-		});
-		if(location.href.indexOf('&guide=1')!==-1){
-			map.setStatus({scrollWheel:false})
-		}
-		marker = new AMap.Marker({
-    					position: [108.324459,22.813779],
-                       animation:"AMAP_ANIMATION_DROP",
-    					title: "国贸购物中心",
-    					map: map
-		});
-		AMap.service('AMap.Driving');
-		var driving= new AMap.Driving({
-			city: '南宁',
-			map:map,
-			panel:'panel'
-		});
-		AMap.plugin('AMap.Autocomplete',function(){//回调函数
-			//实例化Autocomplete
-			var autoOptions = {
-				city: "南宁", //城市，默认全国
-				input:"keyword"//使用联想输入的input的id
-			};
-			autocomplete= new AMap.Autocomplete(autoOptions);
-    //TODO: 使用autocomplete对象调用相关功能
-		})
-		AMap.event.addListener(autocomplete, "select", function(e){
-     	//TODO 针对选中的poi实现自己的功能
-			//alert("输入地点");
-			driving.search([{keyword:e.poi.name},{keyword:'国贸购物中心'}]);
-		}); 
-</script>
 <!-- InstanceEndEditable -->
 <div class="container-fluid" id="footer">
 	<div id="lastUpdate" align="center" style="margin-top: 50px; color: #B3B3B3;"></div>
